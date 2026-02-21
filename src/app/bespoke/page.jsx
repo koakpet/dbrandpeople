@@ -24,9 +24,7 @@ export default function BespokePage() {
       </section>
 
       {/* Form */}
-      <section>
-        <BespokeForm />
-      </section>
+      <section>{/* <BespokeForm /> */}</section>
     </main>
   );
 }
