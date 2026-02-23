@@ -36,10 +36,6 @@ export default function Carousel() {
       <div className="absolute inset-0 bg-black/70" />
 
       <div className="z-10 text-white text-center mb-9 px-6">
-        <h4 className="text-2xl font-bold tracking-tight">
-          Where craftmanship meets identity
-        </h4>
-
         <p className="mx-auto mt-2 max-w-2xl text-base text-gray-200">
           Made-to-measure garments designed with precision, intention, and
           uncompromising craftsmanship.
@@ -48,16 +44,16 @@ export default function Carousel() {
         <div className="mt-6 flex flex-row items-center justify-center gap-4">
           <Link
             href="/bespoke"
-            className="rounded-md bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-gray-200"
+            className="rounded-md bg-white px-6 py-3 text-xs font-medium text-black transition hover:bg-gray-200"
           >
-            Request a Bespoke Quote
+            Request Quote
           </Link>
 
           <Link
             href="/gallery"
             className="rounded-md border border-white px-6 py-3 text-sm font-medium text-white bg-black transition hover:bg-white hover:text-black"
           >
-            View Our Work
+            View Work
           </Link>
         </div>
       </div>
