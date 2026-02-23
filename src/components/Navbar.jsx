@@ -13,7 +13,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" onClick={() => setOpen(false)}>
           <Image
-            src="/logo.jpg"
+            src="/images/logo.jpg"
             width={120}
             height={15}
             alt="DBrand People"

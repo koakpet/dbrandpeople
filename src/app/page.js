@@ -3,32 +3,30 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <main>
-      {/* Jumbotron / Hero */}
-      <section className="relative flex h-[90vh] items-center justify-center bg-black">
-        {/* Background image */}
+      {/* Hero */}
+      <section className="h-[90vh] relative flex justify-center items-end">
+        {/* Background Image */}
         <img
-          src="/images/hero-1.jpg"
-          alt="DBrand bespoke fashion"
-          className="absolute inset-0 h-full w-full object-cover opacity-60"
+          src="/images/hero.jpg"
+          alt="DBrand People"
+          className="absolute insert-0 w-full h-full object-cover"
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/70" />
 
         {/* Content */}
-        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
-            Bespoke Clothing,
-            <br className="hidden sm:block" />
-            Crafted for You
-          </h1>
+        <div className="z-10 text-white text-center mb-12">
+          <h4 className="text-lg font-bold tracking-tight sm:text-5xl md:text-6xl">
+            Where craftmanship meets identity
+          </h4>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-200">
+          <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-200">
             Made-to-measure garments designed with precision, intention, and
             uncompromising craftsmanship.
           </p>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/bespoke"
               className="rounded-md bg-white px-8 py-3 text-sm font-medium text-black transition hover:bg-gray-200"
@@ -38,7 +36,7 @@ export default function HomePage() {
 
             <Link
               href="/gallery"
-              className="rounded-md border border-white px-8 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-black"
+              className="rounded-md border border-white px-8 py-3 text-sm font-medium text-white bg-black transition hover:bg-white hover:text-black"
             >
               View Our Work
             </Link>
