@@ -21,7 +21,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="relative mt-18 h-[77vh] flex justify-center items-end">
+    <div className="relative mt-18 h-[81vh] flex justify-center items-end">
       {images.map((src, index) => (
         <img
           key={src}
@@ -33,10 +33,10 @@ export default function Carousel() {
         />
       ))}
 
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/60" />
 
-      <div className="z-10 text-white text-center mb-9 px-6">
-        <p className="mx-auto mt-2 max-w-2xl text-base text-gray-200">
+      <div className="z-10 text-white text-center mb-6 px-2">
+        <p className="mt-2 text-sm text-gray-200">
           Made-to-measure garments designed with precision, intention, and
           uncompromising craftsmanship.
         </p>
@@ -44,14 +44,14 @@ export default function Carousel() {
         <div className="mt-6 flex flex-row items-center justify-center gap-4">
           <Link
             href="/bespoke"
-            className="rounded-md bg-white px-6 py-3 text-xs font-medium text-black transition hover:bg-gray-200"
+            className="rounded-md border-white bg-white px-5 py-2 text-sm font-medium text-black transition hover:bg-gray-200"
           >
             Request Quote
           </Link>
 
           <Link
             href="/gallery"
-            className="rounded-md border border-white px-6 py-3 text-sm font-medium text-white bg-black transition hover:bg-white hover:text-black"
+            className="rounded-md border border-white px-5 py-3 text-sm font-medium text-white bg-black transition hover:bg-white hover:text-black"
           >
             View Work
           </Link>
