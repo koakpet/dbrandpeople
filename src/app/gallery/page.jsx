@@ -12,7 +12,7 @@ export default function GalleryPage() {
   ];
 
   return (
-    <main className="mx-auto max-w-6xl px-2 pt-18 md:px-6 md:py-16">
+    <main className="bg-white mx-auto max-w-6xl px-2 pt-18 pb-6 md:px-6 md:py-16">
       {/* Page Header */}
       <header className="mb-6 md:mb-12 text-center">
         <h1 className="text-3xl font-semibold tracking-tight text-black">
@@ -24,7 +24,7 @@ export default function GalleryPage() {
       </header>
 
       {/* Image Grid */}
-      <section className="grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-6">
+      <section className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-6">
         {images.map((src, index) => (
           <div key={index} className="overflow-hidden rounded-lg bg-gray-100">
             <img
