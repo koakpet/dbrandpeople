@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 z-10 w-full bg-white font-serif">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-3 py-2 md:px-6 md:py-3">
         {/* Logo */}
         <Link href="/" onClick={() => setOpen(false)}>
           <Image
