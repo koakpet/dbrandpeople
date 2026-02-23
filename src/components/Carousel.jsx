@@ -53,7 +53,7 @@ export default function Carousel() {
             href="/gallery"
             className="rounded-md border border-white px-5 py-2 text-sm font-medium text-white bg-black transition hover:bg-white hover:text-black"
           >
-            View Work
+            Our Work
           </Link>
         </div>
       </div>
