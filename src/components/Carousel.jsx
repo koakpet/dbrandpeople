@@ -21,7 +21,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="relative mt-18 h-[81vh] flex justify-center items-end">
+    <div className="relative mt-16 h-[81vh] flex justify-center items-end">
       {images.map((src, index) => (
         <img
           key={src}
