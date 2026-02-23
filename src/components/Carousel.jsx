@@ -36,7 +36,7 @@ export default function Carousel() {
       <div className="absolute inset-0 bg-black/60" />
 
       <div className="z-10 text-white text-center mb-6 px-2">
-        <p className="mt-2 text-base font-medium text-gray-200">
+        <p className="mt-2 text-lg font-medium text-gray-200">
           Made-to-measure garments designed with precision, intention, and
           uncompromising craftsmanship.
         </p>
