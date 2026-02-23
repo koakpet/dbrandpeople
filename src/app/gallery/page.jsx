@@ -12,19 +12,19 @@ export default function GalleryPage() {
   ];
 
   return (
-    <main className="mx-auto max-w-6xl px-6 py-16">
+    <main className="mx-auto max-w-6xl px-2 pt-18 md:px-6 md:py-16">
       {/* Page Header */}
-      <header className="mb-12 text-center">
+      <header className="mb-6 md:mb-12 text-center">
         <h1 className="text-3xl font-semibold tracking-tight text-black">
           Our Work
         </h1>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-2 md:mt-4 text-gray-600">
           A selection of bespoke pieces crafted for our clients.
         </p>
       </header>
 
       {/* Image Grid */}
-      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <section className="grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-6">
         {images.map((src, index) => (
           <div key={index} className="overflow-hidden rounded-lg bg-gray-100">
             <img
