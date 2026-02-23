@@ -1,30 +1,25 @@
-import {Geist, Geist_Mono} from "next/font/google";
+import {Cormorant_Garamond} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-cormorant",
+  display: "swap",
 });
 
 export const metadata = {
-  title: "DBrand Market Place",
+  title: "DBrand Marketplace",
   description:
-    "DBrand Market Place is the offical webapp for making purchase for all your bespoke outfits, from your most trusted vendor",
+    "DBrand Marketplace is the official web app for requesting and purchasing bespoke outfits from your trusted tailor.",
 };
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={cormorant.variable}>
+      <body className="font-serif antialiased text-gray-900">
         <Navbar />
         {children}
         <Footer />
